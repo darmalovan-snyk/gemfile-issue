@@ -46,7 +46,7 @@ gem 'unicorn'
 # Use debugger
 gem 'debugger', group: [:development, :test]
 gem 'restforce'
-gem 'vcr_cable'
+gem 'vcr_cable', '>= 0.2.3'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
