@@ -2,29 +2,29 @@ ruby '2.0.0'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '5.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -38,7 +38,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', '>= 4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -46,10 +46,10 @@ gem 'unicorn'
 # Use debugger
 gem 'debugger', group: [:development, :test]
 gem 'restforce'
-gem 'vcr_cable'
+gem 'vcr_cable', '>= 0.2.3'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.14', '>= 2.14.0'
   gem 'spork', :github => 'sporkrb/spork'
   gem 'spork-rails', :github => 'sporkrb/spork-rails'
   gem 'guard'
@@ -69,8 +69,8 @@ gem 'mocha', require: false
 gem 'timecop'
 gem 'normalize-rails'
 gem 'rails_12factor', group: :production # Heroku wank
-gem 'roadie' # Inline styles etc. for emails
+gem 'roadie' , '>= 3.0.0' # Inline styles etc. for emails
 gem 'webmock', group: :test
 gem "mail_view", "~> 1.0.3"
-gem "factory_girl_rails", "~> 4.0"
+gem "factory_girl_rails", "~> 4.3", ">= 4.3.0"
 
