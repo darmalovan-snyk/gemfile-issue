@@ -69,8 +69,8 @@ gem 'mocha', require: false
 gem 'timecop'
 gem 'normalize-rails'
 gem 'rails_12factor', group: :production # Heroku wank
-gem 'roadie' # Inline styles etc. for emails
-gem 'webmock', group: :test
+gem 'roadie' , '>= 2.4.3' # Inline styles etc. for emails
+gem 'webmock', '>= 1.16.1', group: :test
 gem "mail_view", "~> 1.0.3"
 gem "factory_girl_rails", "~> 4.0"
 
